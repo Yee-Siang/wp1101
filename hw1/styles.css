@@ -117,7 +117,7 @@ body {
     background-color: #136b16; /* Green */
     color: white;
     box-shadow: 0 0 6px 3px rgb(17, 206, 196),  0 0 10px 6px rgb(15, 111, 201),
-        /* middle magenta */ 0 0 14px 9px rgb(53, 113, 224); /* outer cyan */
+         0 0 14px 9px rgb(53, 113, 224); 
       
   }
 
