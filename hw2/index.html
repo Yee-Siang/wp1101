@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Photo Album</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+</head>
+
+<body>
+  <script src="main.js"></script>
+  <h1 class="title">Welcome to My Traveling Map</h1>
+  <div id="scroll">
+    <p id="intro">As a student studying in Taipei, I have so much to say and share with you! <br>
+      In the leisure time of our schoolwork, we have expolred many fantastic sites and are willing
+      to provide a detailed traveling guide for guys in National Taiwan University. Wish you a
+      great journey.
+    </p>
+  </div>
+  <br>
+  <button class="button" onclick="author()">See Author</button>
+  <br>
+  <div class="selector">
+    <button class="button1" onclick="selectAlbum(1)">Album 1</button>
+    <button class="button1" onclick="selectAlbum(2)">Album 2</button>
+    <button class="button1" onclick="selectAlbum(3)">Album 3</button>
+  </div>
+  <div id="detail" class="container">
+    <a id="anchor" href="https://goo.gl/maps/FYtQVTX4Ew5zkeLD9"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/01.PNG" class="pic1" id="1"></a>
+    <a id="anchor" href="https://goo.gl/maps/oQMpPJkyFQKm6myr9"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/02.PNG" class="pic" id="2"></a>
+    <a id="anchor" href="https://goo.gl/maps/oQMpPJkyFQKm6myr9"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/03.PNG" class="pic" id="3"></a>
+    <a id="anchor" href="https://goo.gl/maps/z7KWFfypiVFESPX29"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/04.PNG" class="pic" id="4"></a>
+    <a id="anchor" href="https://goo.gl/maps/qf1djWHmv9ZJyLBm8"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/05.PNG" class="pic" id="5"></a>
+    <a id="anchor" href="https://goo.gl/maps/uy3PRoHSXXyuobzv7"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/06.PNG" class="pic" id="6"></a>
+    <a id="anchor" href="https://goo.gl/maps/jJNS53eSNdcTJ8Kg9"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/07.PNG" class="pic" id="7"></a>
+    <a id="anchor" href="https://goo.gl/maps/jJNS53eSNdcTJ8Kg9"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/08.PNG" class="pic" id="8"></a>
+    <a id="anchor" href="https://goo.gl/maps/jJNS53eSNdcTJ8Kg9"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/09.PNG" class="pic" id="9"></a>
+    <a id="anchor" href="https://goo.gl/maps/RZjaRkFvAbzApE2QA"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/10.PNG" class="pic" id="10"></a>
+    <a id="anchor" href="https://goo.gl/maps/jLUyWbUroSAP5Uuj7"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/11.PNG" class="pic" id="11"></a>
+    <a id="anchor" href="https://goo.gl/maps/x26NDkCAoSV8q1LL7"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/12.PNG" class="pic" id="12"></a>
+    <a id="anchor" href="https://goo.gl/maps/TjbAnCcSywo7rVxu9"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/13.PNG" class="pic" id="13"></a>
+    <a id="anchor" href="https://goo.gl/maps/sxh8MmeLzdKvCxaT6"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/14.PNG" class="pic" id="14"></a>
+    <a id="anchor" href="https://goo.gl/maps/BxLs1y2t83nTMFuMA"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/15.PNG" class="pic" id="15"></a>
+    <a id="anchor" href="https://goo.gl/maps/1gKjJ26UVCyZwqqF9"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/16.PNG" class="pic" id="16"></a>
+    <a id="anchor" href="https://goo.gl/maps/gLsYzkXZRBzMqqck6"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/17.PNG" class="pic" id="17"></a>
+    <a id="anchor" href="https://goo.gl/maps/gLsYzkXZRBzMqqck6"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/18.PNG" class="pic" id="18"></a>
+    <a id="anchor" href="https://goo.gl/maps/5Jz14y2D1GGJqQYM8"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/19.PNG" class="pic" id="19"></a>
+    <a id="anchor" href="https://goo.gl/maps/5Jz14y2D1GGJqQYM8"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/20.PNG" class="pic" id="20"></a>
+    <a id="anchor" href="https://goo.gl/maps/5Jz14y2D1GGJqQYM8"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/21.PNG" class="pic" id="21"></a>
+    <a id="anchor" href="https://goo.gl/maps/5Jz14y2D1GGJqQYM8"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/22.PNG" class="pic" id="22"></a>
+    <a id="anchor" href="https://goo.gl/maps/pQNBtFDQ5mSDHJ7H6"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/23.PNG" class="pic" id="23"></a>
+    <a id="anchor" href="https://goo.gl/maps/pQNBtFDQ5mSDHJ7H6"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/24.PNG" class="pic" id="24"></a>
+    <a id="anchor" href="https://goo.gl/maps/BLx1o6cQ2aYEy7SJ7"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/25.PNG" class="pic" id="25"></a>
+    <a id="anchor" href="https://goo.gl/maps/WHoMp88Vxy5ZVQNf6"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/26.PNG" class="pic" id="26"></a>
+    <a id="anchor" href="https://goo.gl/maps/qAtgb4uFGu7URVBN7"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/27.PNG" class="pic" id="27"></a>
+    <a id="anchor" href="https://goo.gl/maps/qAtgb4uFGu7URVBN7"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/28.PNG" class="pic" id="28"></a>
+    <a id="anchor" href="https://goo.gl/maps/FKYBRgfW8LodkorX6"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/29.PNG" class="pic" id="29"></a>
+    <a id="anchor" href="https://goo.gl/maps/FKYBRgfW8LodkorX6"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/30.PNG" class="pic" id="30"></a>
+    <a id="anchor" href="https://goo.gl/maps/x95esTSLjQ3WNpC38"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/31.PNG" class="pic" id="31"></a>
+    <a id="anchor" href="https://goo.gl/maps/x95esTSLjQ3WNpC38"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/32.PNG" class="pic" id="32"></a>
+    <a id="anchor" href="https://goo.gl/maps/uaDQEbSSkJdd4nTU8"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/33.PNG" class="pic" id="33"></a>
+    <a id="anchor" href="https://goo.gl/maps/uaDQEbSSkJdd4nTU8"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/34.PNG" class="pic" id="34"></a>
+    <a id="anchor" href="https://goo.gl/maps/todXMFE5g8HTAjat5"><img
+        src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/35.PNG" class="pic" id="35"></a>
+    <p id="hyperlink">Tap for More Information!</p>
+  </div>
+
+  <div id="album1">
+    <div id="row">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/01.PNG" class="picBorder1" id="1s"
+        onclick="enlarge(1)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/02.PNG" class="picBorder" id="2s"
+        onclick="enlarge(2)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/03.PNG" class="picBorder" id="3s"
+        onclick="enlarge(3)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/04.PNG" class="picBorder" id="4s"
+        onclick="enlarge(4)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/05.PNG" class="picBorder" id="5s"
+        onclick="enlarge(5)">
+    </div>
+    <div id="row">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/06.PNG" class="picBorder" id="6s"
+        onclick="enlarge(6)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/07.PNG" class="picBorder" id="7s"
+        onclick="enlarge(7)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/08.PNG" class="picBorder" id="8s"
+        onclick="enlarge(8)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/09.PNG" class="picBorder" id="9s"
+        onclick="enlarge(9)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/10.PNG" class="picBorder" id="10s"
+        onclick="enlarge(10)">
+    </div>
+    <div id="row">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/11.PNG" class="picBorder" id="11s"
+        onclick="enlarge(11)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/12.PNG" class="picBorder" id="12s"
+        onclick="enlarge(12)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/13.PNG" class="picBorder" id="13s"
+        onclick="enlarge(13)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/14.PNG" class="picBorder" id="14s"
+        onclick="enlarge(14)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/15.PNG" class="picBorder" id="15s"
+        onclick="enlarge(15)">
+    </div>
+
+  </div>
+  </div>
+
+  <div id="album2">
+
+    <div id="row">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/16.PNG" class="picBorder1" id="16s"
+        onclick="enlarge(16)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/17.PNG" class="picBorder" id="17s"
+        onclick="enlarge(17)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/18.PNG" class="picBorder" id="18s"
+        onclick="enlarge(18)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/19.PNG" class="picBorder" id="19s"
+        onclick="enlarge(19)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/20.PNG" class="picBorder" id="20s"
+        onclick="enlarge(20)">
+    </div>
+    <div id="row">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/21.PNG" class="picBorder" id="21s"
+        onclick="enlarge(21)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/22.PNG" class="picBorder" id="22s"
+        onclick="enlarge(22)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/23.PNG" class="picBorder" id="23s"
+        onclick="enlarge(23)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/24.PNG" class="picBorder" id="24s"
+        onclick="enlarge(24)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/25.PNG" class="picBorder" id="25s"
+        onclick="enlarge(25)">
+    </div>
+    <div id="row">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/26.PNG" class="picBorder" id="26s"
+        onclick="enlarge(26)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/27.PNG" class="picBorder" id="27s"
+        onclick="enlarge(27)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/28.PNG" class="picBorder" id="28s"
+        onclick="enlarge(28)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/29.PNG" class="picBorder" id="29s"
+        onclick="enlarge(29)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/30.PNG" class="picBorder" id="30s"
+        onclick="enlarge(30)">
+    </div>
+    <div id="row">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/31.PNG" class="picBorder" id="31s"
+        onclick="enlarge(31)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/32.PNG" class="picBorder" id="32s"
+        onclick="enlarge(32)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/33.PNG" class="picBorder" id="33s"
+        onclick="enlarge(33)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/34.PNG" class="picBorder" id="34s"
+        onclick="enlarge(34)">
+      <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/35.PNG" class="picBorder" id="35s"
+        onclick="enlarge(35)">
+    </div>
+  </div>
+
+  <div id="album3">
+
+  </div>
+
+  <div id="author" style="margin-right: auto; margin-left:auto;">
+    <img src="https://raw.githubusercontent.com/Yee-Siang/Pic/main/author.png" class="person">
+    <p id="hyperlink">credited by<em>Y-S &nbsp;C, NTUEE</em></p>
+  </div>
+
+</body>
+
+</html>
