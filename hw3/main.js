@@ -8,8 +8,13 @@ let num = 0;
 let count = document.getElementsByClassName("todo-app__total")[0];
 inputSection.addEventListener("keypress", generate);
 count.textContent = `${num} left`;
+
+let foot = document.getElementById("todo-app__footer");
+foot.style.display = "none";
+
 class Row {
     constructor(data, N) {
+        foot.style.display = "flex";
         this.node = document.createElement("li");
         this.node.classList.add("todo-app__item");
         let front = document.createElement("div");
