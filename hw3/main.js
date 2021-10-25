@@ -38,7 +38,7 @@ class Row {
         back.addEventListener("click", () => {
             this.node.style.display = "none";
             deleted.push(this.node);
-            num--;
+            if (!(completed.includes(this.node))) { num--; }
             count.textContent = `${num} left`;
         })
 
