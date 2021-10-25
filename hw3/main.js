@@ -5,16 +5,19 @@ let completed = []
 const inputSection = document.getElementsByClassName("todo-app__input")[0];
 const ls = document.getElementById("todo-list");
 let num = 0;
+let c_count = 0;  //Completed_count
 let count = document.getElementsByClassName("todo-app__total")[0];
 inputSection.addEventListener("keypress", generate);
 count.textContent = `${num} left`;
 
 let foot = document.getElementById("todo-app__footer");
+let c = document.getElementById("count")
 foot.style.display = "none";
 
 class Row {
     constructor(data, N) {
         foot.style.display = "flex";
+        if (c_count === 0) { c.style.display = "none" }
         this.node = document.createElement("li");
         this.node.classList.add("todo-app__item");
         let front = document.createElement("div");
@@ -45,6 +48,17 @@ class Row {
             deleted.push(this.node);
             if (!(completed.includes(this.node))) { num--; }
             count.textContent = `${num} left`;
+
+            if (completed.includes(this.node)) { c_count--; }
+            if (c_count === 0) {
+                c.style.display = "none";
+            }
+
+
+            if (all.length === deleted.length) {
+                foot.style.display = "none";
+            }
+
         })
 
 
@@ -54,6 +68,8 @@ class Row {
             completed.push(this.node);
             num--;
             count.textContent = `${num} left`;
+            c.style.display = "flex";
+            c_count++;
         })
     }
     get rNode() {
@@ -66,12 +82,10 @@ function generate(e) {
     if ((e.key === "Enter") && (e.target.value != "")) {
         num++;
         let x = new Row(e.target.value, num);
-        //  console.log(e.target.value)
         ls.appendChild(x.rNode);
         count.textContent = `${num} left`;
         e.target.value = "";
     }
-    // else { write(e.target.value) }
 }
 
 function listAll() {
@@ -113,5 +127,11 @@ function clearCompleted() {
             deleted.push(ele);
             ele.style.display = "none";
         }
+        c.style.display = "none";
+    }
+
+
+    if (all.length === deleted.length) {
+        foot.style.display = "none";
     }
 }
