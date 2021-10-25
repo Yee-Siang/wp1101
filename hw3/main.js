@@ -36,7 +36,6 @@ class Row {
         all.push(this.node);
 
         back.addEventListener("click", () => {
-            console.log("hi")
             this.node.style.display = "none";
             deleted.push(this.node);
             num--;
@@ -48,8 +47,6 @@ class Row {
             front.classList.add("selected");
             this.content.classList.add("finished");
             completed.push(this.node);
-            //   console.log("completed");
-            //   console.log(completed);
             num--;
             count.textContent = `${num} left`;
         })
@@ -105,3 +102,11 @@ function listCompleted() {
     }
 }
 
+function clearCompleted() {
+    for (let ele of all) {
+        if ((completed.includes(ele))) {
+            deleted.push(ele);
+            ele.style.display = "none";
+        }
+    }
+}
