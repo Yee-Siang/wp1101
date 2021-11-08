@@ -213,10 +213,10 @@ function App() {
           <Button Styletype="2" No="0" Click={(e) => handleclick(e)} />
           <Button Styletype="2" No="." Click={() => handlePoint()} />
           <Button Styletype="1" No="=" Click={() => handleEqual()} />
+          <Button Styletype="3" No="MR" Click={() => handleStore()} />
+          <Button Styletype="3" No="MC" Click={() => handleRecall()} />
           <Button No="Sci" Click={() => handleSci()} />
           <Button No="Del" Click={() => handleDelete()} />
-          <Button Styletype="3" No="Sto" Click={() => handleStore()} />
-          <Button Styletype="3" No="Rec" Click={() => handleRecall()} />
         </div>
       </section>
 
