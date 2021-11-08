@@ -1,0 +1,125 @@
+
+
+
+body {
+  height: 100%;
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: rgb(29, 26, 26);
+  overflow:scroll;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+.app__root {
+  margin: 0 auto;
+  width: 50em;
+  align-items: center;
+  padding: 1em;
+  font-weight: 300;
+}
+
+.app__title {
+  font-size: 80px;
+  font-weight: 200;
+  text-align: center;
+  color: rgba(248, 61, 4, 0.945);
+  margin: 0;
+  padding: 0;
+}
+.app__littletitle {
+  font-size: 20px;
+  font-weight: 20;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+}
+.app__result {
+  font-size: 50px;
+  font-weight: 50;
+  text-align: center;
+  color: rgb(255, 253, 253);
+  margin: 0;
+  padding: 0;
+}
+
+.app__main {
+  width: 800px;
+  /*overflow: scroll;*/
+  height: 400px;
+  
+}
+
+
+
+.app__item {
+  position: relative;
+  width: 100%;
+  min-height: 5em;
+  display: inline;
+  border-top: 0;
+  
+}
+
+.Type1 {
+  width: 50px;
+  height: 50px;
+  background: rgb(248, 180, 92);
+  margin: 10px;
+  border-radius: 100%;
+  position: relative;
+  box-shadow: 0px 1px 3px rgb(228, 143, 15);
+  font-size: 25px;
+  font-weight: 900;
+}
+.Type2 {
+  width: 50px;
+  height: 50px;
+  background: rgb(224, 190, 145);
+  margin: 10px;
+  border-radius: 100%;
+  position: relative;
+  box-shadow: 0px 1px 3px rgba(158, 102, 18, 0.312);
+  font-size: 25px;
+  font-weight: 900;
+}
+.Type3 {
+  width: 50px;
+  height: 50px;
+  background: rgb(179, 177, 174);
+  margin: 10px;
+  border-radius: 100%;
+  position: relative;
+  box-shadow: 0px 1px 3px rgba(158, 102, 18, 0.312);
+  font-size: 20px;
+  font-weight: 900;
+}
+.Type4 {
+  width: 50px;
+  height: 50px;
+  background: rgb(150, 133, 112);
+  margin: 10px;
+  border-radius: 100%;
+  position: relative;
+  box-shadow: 0px 1px 3px rgba(158, 102, 18, 0.312);
+  font-size: 20px;
+  font-weight: 900;
+  color:azure
+}
+.app__row{
+  height: 60px;
+  width: 600px;
+  margin: auto;
+  justify-content:right;
+  overflow:visible;
+    
+}
+
+
+
+
+
+
