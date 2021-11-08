@@ -167,7 +167,7 @@ function App() {
             `${number / (10 ** Math.floor(Math.log10(Math.abs(number))))}E${Math.floor(Math.log10(Math.abs(number)))}`
             : Math.round(number * 10000000000) / 10000000000}</h1>
         <h1 className="app__littletitle">{((number.toString() === "Infinity") || (number.toString() === "-Infinity")) ?
-          "目前計算結果出現error" : ""}</h1>
+          "Error, check again" : ""}</h1>
 
       </header>
 
@@ -187,9 +187,9 @@ function App() {
           <Button Styletype="2" No="8" Click={(e) => handleclick(e)} />
           <Button Styletype="2" No="9" Click={(e) => handleclick(e)} />
           <Button Styletype="1" No="×" Click={() => handleMul()} />
-          <Button No="Sin" Click={() => handleSin()} />
-          <Button No="Cos" Click={() => handleCos()} />
-          <Button No="Tan" Click={() => handleTan()} />
+          <Button No="sin" Click={() => handleSin()} />
+          <Button No="cos" Click={() => handleCos()} />
+          <Button No="tan" Click={() => handleTan()} />
         </div>
         <div className="app__row">
           <Button Styletype="2" No="4" Click={(e) => handleclick(e)} />
@@ -198,7 +198,7 @@ function App() {
           <Button Styletype="1" No="-" Click={() => handleMinus()} />
           <Button No="Exp" Click={() => handleExp()} />
           <Button No="Log" Click={() => handleLog10()} />
-          <Button No="In" Click={() => handleIn()} />
+          <Button No="ln" Click={() => handleIn()} />
         </div>
         <div className="app__row">
           <Button Styletype="2" No="1" Click={(e) => handleclick(e)} />
