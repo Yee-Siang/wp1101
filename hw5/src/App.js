@@ -220,7 +220,7 @@ function App() {
         </div>
       </section>
 
-      <h1 className="app__littletitle" >科學記號表示：{sci}，目前儲存的數字：{save}</h1>
+      <h1 className="app__littletitle" >Scientific Notation：{sci}&nbsp;&nbsp;Saved Number：{save}</h1>
 
     </div>)
 }
