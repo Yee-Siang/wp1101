@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: rgb(245, 245, 245);
+  overflow: hidden;
+}
+
+input {
+  background-color: azure;
+  width: 350px;
+  height: 30px;
+}
+button{
+  background-color: azure;
+  height: 30px;
+}
+
+.app__root {
+  margin: 0 auto;
+  /* margin-top: 7em; */
+  width: 50em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1em;
+  color: #4d4d4d;
+  font-weight: 300;
+}
+
+.app__header {
+  margin-bottom: 1em;
+}
+
+.app__title {
+  font-size: 50px;
+  font-weight: 100;
+  text-align: center;
+  color: rgba(175, 47, 47, 0.6);
+  margin: 0;
+  padding: 0;
+}
+.app__littletitle {
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center;
+  color: rgba(175, 47, 47, 0.5);
+  margin: 0;
+  padding: 0;
+}
+

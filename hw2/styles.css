@@ -164,7 +164,31 @@ body {
   } 
   
   .button1:hover {
-    background-color: #136b16; /* Green */
+    
+    color: white;
+    box-shadow: 0 0 6px 3px rgb(17, 206, 196),  0 0 10px 6px rgb(15, 111, 201),
+         0 0 14px 9px rgb(53, 113, 224); 
+      
+  }
+
+  .Button1 {
+    background-color: #aaeeac9a; /* Green */
+    border: none;
+    padding: 15px 32px; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 0px;
+    margin-top: 50px;
+    background-color: #136b16;
+    color: rgb(34, 51, 42);
+    border: 2px solid #4CAF50; /* Green */
+    transition-duration: 0.35s;
+    border-radius: 15px;
+  } 
+  
+  .Button1:hover {
+    
     color: white;
     box-shadow: 0 0 6px 3px rgb(17, 206, 196),  0 0 10px 6px rgb(15, 111, 201),
          0 0 14px 9px rgb(53, 113, 224); 
