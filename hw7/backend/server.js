@@ -105,10 +105,11 @@ app.post('/api/query-cards', async (req, res) => {
     let out = existing.map(e => `(${e.name}, ${e.subject}, ${e.score})`);
     //let out = existing.map(e => (e.name, e.subject, e.score));
     let templateString;
-    if (out.length === 0) { templateString = `${queryType} (${queryString}) not found!` }
-    else { templateString = `${out.join(",\n")}`; }
+    if (out.length === 0) { templateString = [`${queryType} (${queryString}) not found!`] }
+    // else { templateString = `${out.join(",\n")}`; }
+    else { templateString = out }
     console.log(templateString)
-    res.json({ message: `${templateString}` })
+    res.json({ messages: templateString })
 })
 
 app.listen(port, () => {
