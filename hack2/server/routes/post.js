@@ -4,8 +4,8 @@ import moment from 'moment'
 
 const router = express.Router()
 
-const saveUser = async (title, content) => {
-    const existing = await Post.findOne({ name: name, subject: subject });
+const savePost = async (title, content) => {
+    //const existing = await Post.findOne({ name: name, subject: subject });
     //if (existing) throw new Error(`data ${name} exists!!`);
     if (existing) {
         try {

@@ -1,5 +1,5 @@
 import express from 'express'
-import postRoute from './routes/post'
+import Routes from './routes/post'
 import mongoose from 'mongoose'
 import { dataInit } from './upload'
 import WebSocket from 'ws';
@@ -41,8 +41,8 @@ db.once("open", () => {
 
   wss.on("connection", (ws) => {
     db.once("open", () => {
-      console.log("MongoDB connected!")
-      wss.on("connection", (ws) => {
+      console.log("connected!")
+      wss.on("connection success", (ws) => {
         initData(ws);
       })
     })
@@ -51,7 +51,7 @@ db.once("open", () => {
 
 //
 
-app.use('/api', postRoute)
+app.use('/api', Routes)
 
 app.listen(port, () => {
   console.log(`Server is up on port ${port}.`)
