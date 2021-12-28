@@ -11,7 +11,7 @@ dotenv.config();
 mongoose.connect(process.env.MONGO_URL, {
     useNewUrlParser: true, useUnifiedTopology: true,
 })
-    .then((res) => console.log("mongo db connection created."));
+    .then((res) => { console.log("mongo db connection created.") });
 
 const app = express();
 const port = process.env.PORT || 5000;
