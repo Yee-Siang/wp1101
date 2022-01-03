@@ -1,19 +1,25 @@
 import mongoose from 'mongoose';
 
 const Schema = mongoose.Schema
+
+const UserSchema = new Schema({
+    name: { type: String, required: true },
+})
+
 const MessageSchema = new Schema({
-    name:{
-        type:String,
-        required: [true,"Name field is required."]
-    },
-    body:{
-        type:String,
-        required: [true,"Body field is required."]
-    }
+    sender: { type: mongoose.Types.ObjectId, ref: "User" },
+    body: { type: String, required: true },
+})
+
+const ChatBoxSchema = new Schema({
+    name: { type: String, required: true },
+    messages: [{ type: mongoose.Types.ObjectId, ref: "Message" }],
 })
 
 
 
-const Message = mongoose.model("message",MessageSchema)
+const UserModel = mongoose.model("User", UserSchema);
+const ChatBoxModel = mongoose.model("ChatBox", ChatBoxSchema);
+const MessageModel = mongoose.model("Message", MessageSchema);
 
-export default Message;
+export { UserModel, ChatBoxModel, MessageModel };
