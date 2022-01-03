@@ -1,6 +1,6 @@
 const Message = {
-  sender(parent, args, { db }, info) {
-    return db.UserModel.findById(parent.sender);
+  async sender(parent, args, { db }, info) {
+    return await db.UserModel.findById(parent.sender);
   },
 };
 

@@ -1,46 +1,22 @@
+import { makeName } from './utility';
+
 const Query = {
-  users(parent, args, { db }, info) {
-    if (!args.query) {
-      return db.users;
+  async users(parent, args, { db }, info) {
+    const users = await db.UserModel.find({});
+    return users;
+  },
+  async chatBox(parent, { name1, name2 }, { db }, info) {
+    
+    if (!name1 || !name2) {
+      return await db.ChatBoxModel.find({});
     }
 
-    return db.users.filter((user) => {
-      return ((user.name.toLowerCase().includes(args.query.toLowerCase())) && (user.age >= args.age));
-    });
+    const chatBoxName = makeName(name1, name2);
+    return await db.ChatBoxModel.findOne({ name: chatBoxName });
   },
-  posts(parent, args, { db }, info) {
-    if (!args.query) {
-      return db.posts;
-    }
-
-    return db.posts.filter((post) => {
-      const isTitleMatch = post.title
-        .toLowerCase()
-        .includes(args.query.toLowerCase());
-      const isBodyMatch = post.body
-        .toLowerCase()
-        .includes(args.query.toLowerCase());
-      return isTitleMatch || isBodyMatch;
-    });
-  },
-  comments(parent, args, { db }, info) {
-    return db.comments;
-  },
-  me() {
-    return {
-      id: '123098',
-      name: 'Mike',
-      email: 'mike@example.com',
-    };
-  },
-  post() {
-    return {
-      id: '092',
-      title: 'GraphQL 101',
-      body: '',
-      published: false,
-    };
-  },
+  async messages(parent, args, { db }, info) {
+    return await db.MessageModel.find({});
+  }
 };
 
-export { Query as default };
+export default Query;
