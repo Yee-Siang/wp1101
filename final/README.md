@@ -24,6 +24,6 @@
     - Setting : set your personal informantions & password.
 
 - Collabrate :
-    - 鐘郁翔 : Deploy, Video making
+    - 鐘郁翔 : Deploy Test, Video making, Account Setting page
     - 黃政勛 : Memo page, Learning page, Frontend decoration
-    - 簡宏哲 : Login page, signup page, Spending page, Frontend structure
+    - 簡宏哲 : Login page, Signup page, Spending page, Frontend structure
